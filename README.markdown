@@ -25,7 +25,3 @@ Install
    Edit this new .htaccess file and replace all occurrences of "example.com" by something like "yourdomain.com".
 4. Enable the profile_friendlyurl plugin from the Elgg administration.
 5. In the plugin settings form set the domain name to use.
-
-Todo
-----
-* Change every URLs to the new format (especially for river's items)

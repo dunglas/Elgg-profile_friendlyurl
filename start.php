@@ -1,18 +1,20 @@
 <?php
 /**
- * Elgg profile_friendly_url plugin
+ * Elgg profile_friendlyurl plugin
  *
- * @package Elggprofile_friendly_url
+ * @package Elggprofile_friendlyurl
  * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU Public License version 2
  * @author Kévin Dunglas <dunglas@gmail.com>
  * @copyright Kévin Dunglas - 2010
  */
 
-/**
- * poll extended initialization
- *
- * Register css extensions, contentes view for groups, widgets and event handlers
- */
-function profile_friendly_url_init() {
+function profile_friendly_url($user) {
+  return 'http://' . $user->username . '.' . get_plugin_setting('domain', 'profile_friendlyurl');
 }
+
+function profile_friendlyurl_init() {
+  register_entity_url_handler('profile_friendly_url','user','all');
+}
+
+register_elgg_event_handler('init','system','profile_friendlyurl_init');
 ?>
