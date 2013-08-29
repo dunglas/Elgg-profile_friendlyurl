@@ -1,6 +1,6 @@
 Profile Friendly URL
 ===================
-*Kévin Dunglas <dunglas@gmail.com> - http://lapin-blanc.net - 2010 - GPL v2*
+*Kévin Dunglas <dunglas@gmail.com> - http://dunglas.fr - 2010 - GPL v2*
 
 Creates friendly URLs for user's profiles as subdomains.
 Ie: http://example.com/pg/profile/user will become http://user.example.com
